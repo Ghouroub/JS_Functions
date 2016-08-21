@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<style>
+			#Israel {
+				float: left;
+				width: 50%;
+				height: 50%;
+			}
+			#text1 {
+				display: none;
+				z-index: 100;
+				position: absolute;
+				color: black;
+				font-size: 36px;
+				font-weight: bold;
+				left: 300px;
+				top: 120px;
+			}
+			#USA {
+				float: left;
+				width: 50%;
+				height: 50%;
+			}
+			#text2 {
+				display: none;
+				z-index: 100;
+				position: absolute;
+				color: black;
+				font-size: 36px;
+				font-weight: bold;
+				left: 1000px;
+				top: 110px;
+			}
+			#Italy {
+				float: left;
+				width: 50%;
+				height: 50%;
+			}
+			#text3 {
+				display: none;
+				z-index: 100;
+				position: absolute;
+				color: black;
+				font-size: 36px;
+				font-weight: bold;
+				left: 307px;
+				top: 450px;
+			}
+			#Holland {
+				float: left;
+				width: 50%;
+				height: 50%;
+			}
+			#text4 {
+				display: none;
+				z-index: 100;
+				position: absolute;
+				color: black;
+				font-size: 36px;
+				font-weight: bold;
+				left: 950px;
+				top: 450px;
+			}
+			#France {
+				float: left;
+				width: 50%;
+				height: 50%;
+			}
+			#text5 {
+				display: none;
+				z-index: 100;
+				position: absolute;
+				color: black;
+				font-size: 36px;
+				font-weight: bold;
+				left: 287px;
+				top: 780px;
+			}
+		</style>
+		<script>
+			var item = document.getElementById("Israel");
+			item.addEventListener("mouseover", func1, false);
+			item.addEventListener("mouseout", func2, false);
+
+			function func1() {
+				document.getElementById("text1").setAttribute("style", "display:block;")
+			}
+
+			function func2() {
+				document.getElementById("text1").setAttribute("style", "display:none;")
+			}
+			var item = document.getElementById("USA");
+			item.addEventListener("mouseover", func3, false);
+			item.addEventListener("mouseout", func4, false);
+
+			function func3() {
+				document.getElementById("text2").setAttribute("style", "display:block;")
+			}
+
+			function func4() {
+				document.getElementById("text2").setAttribute("style", "display:none;")
+			}
+			var item = document.getElementById("Italy");
+			item.addEventListener("mouseover", func5, false);
+			item.addEventListener("mouseout", func6, false);
+
+			function func5() {
+				document.getElementById("text3").setAttribute("style", "display:block;")
+			}
+
+			function func6() {
+				document.getElementById("text3").setAttribute("style", "display:none;")
+			}
+			var item = document.getElementById("Holland");
+			item.addEventListener("mouseover", func7, false);
+			item.addEventListener("mouseout", func8, false);
+
+			function func7() {
+				document.getElementById("text4").setAttribute("style", "display:block;")
+			}
+
+			function func8() {
+				document.getElementById("text4").setAttribute("style", "display:none;")
+			}
+			var item = document.getElementById("France");
+			item.addEventListener("mouseover", func9, false);
+			item.addEventListener("mouseout", func10, false);
+
+			function func9() {
+				document.getElementById("text5").setAttribute("style", "display:block;")
+			}
+
+			function func10() {
+				document.getElementById("text5").setAttribute("style", "display:none;")
+			}
+		</script>
+	</head>
+	<body>
+		<img id="Israel"
+		src="Israel.jpg" style="width:50%; height:50%;" onmouseover="func1(this)" onmouseout="func2(this)"/>
+		<p id="text1">
+			Israel
+		</p>
+		<img id="USA"
+		src="US.jpg" style="width:50%; height:50%;" onmouseover="func3(this)" onmouseout="func4(this)"/>
+		<p id="text2">
+			USA
+		</p>
+			<img id="Italy"
+		src="Italy.jpg" style="width:50%; height:50%;" onmouseover="func5(this)" onmouseout="func6(this)"/>
+		<p id="text3">
+			Italy
+		</p>
+		<img id="Holland"
+		src="Holland.jpg" style="width:50%; height:50%;" onmouseover="func7(this)" onmouseout="func8(this)"/>
+		<p id="text4">
+			Holland
+		</p>
+		<img id="France"
+		src="France.jpg" style="width:50%; height:50%;" onmouseover="func9(this)" onmouseout="func10(this)"/>
+		<p id="text5">
+			France
+		</p>
+	</body>
+</html>

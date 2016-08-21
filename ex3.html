@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+		function myFunction(){
+			var stringSearch = "o",
+			    string = "Ghouroub";
+			for (var count = -1,
+			    index = -2; index != -1; count++,
+			index = string.indexOf(stringSearch, index + 1));
+			console.log(count);
+			}
+		</script>
+	</head>
+	<body>
+		<input id="string">
+		<input id="letter">
+		<button type = "button" onclick="myFunction()">
+			find
+		</button>
+	</body>
+</html>
